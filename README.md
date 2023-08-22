@@ -14,5 +14,5 @@ Este projeto não só simplifica o CRUD de **Produtos**, como também explora a 
 
 **Como executar o projeto:**
 - Realize o download do projeto e importe-o na IDE de sua preferência.
-- Clique no "insetinho" (debug o projeto).
+- Localize a classe "Apiduxcod3Application", clique com o botão direito do mouse sobre a mesma e escolha "Debug Apiduxcod3Appl....main()".
 - Após o projeto startar, acesse http://localhost:8080/swagger-ui/index.html#/.
