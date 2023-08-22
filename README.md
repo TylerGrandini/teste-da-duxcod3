@@ -8,7 +8,7 @@ Este projeto não só simplifica o CRUD de **Produtos**, como também explora a 
 * Lombok
 * H2 Database
 * Spring Data JPA
-* Spring Doc(Open AI)
+* Spring Doc(Open API)
 
 
 **Como executar o projeto:**
