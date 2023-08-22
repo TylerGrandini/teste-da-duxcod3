@@ -7,7 +7,7 @@ import java.util.Optional;
 public interface IProdutoService {
     Optional<Produto> buscarPorId(Long id);
     List<Produto> buscarTodos();
-    void alterar(Produto produto);
+    void alterar(Long id,Produto produto);
     Produto salvar(Produto produto);
     void deletar(Long id);
 }

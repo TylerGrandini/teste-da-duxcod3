@@ -28,12 +28,12 @@ public class ProdutoService implements IProdutoService{
     }
 
     @Override
-    public void alterar(Produto produto) {
-        if (produto.getId() == null) {
+    public void alterar(Long id,Produto produto) {
+        if (id == null) {
             throw new IllegalArgumentException("O ID do produto não pode ser nulo para a operação de alteração.");
         }
 
-        Produto produtoExistente = produtoRepository.findById(produto.getId()).orElseThrow(() -> new EntityNotFoundException("Produto não encontrado com o ID fornecido."));
+        Produto produtoExistente = produtoRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Produto não encontrado com o ID fornecido."));
 
         produtoExistente.setNome(produto.getNome());
         produtoExistente.setValor(produto.getValor());

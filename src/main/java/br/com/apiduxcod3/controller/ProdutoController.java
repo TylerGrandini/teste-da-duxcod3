@@ -28,11 +28,12 @@ public class ProdutoController {
         return ResponseEntity.ok(produtoService.buscarTodos());
     }
 
-    @PostMapping("/alterar")
-    public ResponseEntity<Void>alterar(@RequestBody Produto produto) {
-        produtoService.alterar(produto);
+    @PutMapping("/alterar/{id}")
+    public ResponseEntity<Void> alterar(@PathVariable Long id, @RequestBody Produto produto) {
+        produtoService.alterar(id,produto);
         return ResponseEntity.ok().build();
     }
+
 
     @PostMapping("/salvar")
     public ResponseEntity<Produto> salvar(@RequestBody Produto produto) {
